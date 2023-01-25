@@ -1,0 +1,439 @@
+<!--20JY0213　ゴ　バン　タン　ビ-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Selecting</title>
+	<link href="../CSS/index.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/menu.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link href="../CSS/anime.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/page-top.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/selecting.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="wrap">
+		<header  id ="quaydau">
+			<div id="test">
+				<div class="logo">
+					<h1><a href="Menu.html"><img src="../image/logo1.png" alt="LOGO"></a></h1>
+				</div>
+				<div id="name">
+					<a href="Home.html">
+						<h1>バインミーシンチャオ<br>
+							<div style="text-align: center;">BANH MI XIN CHAO</div>
+						</h1>
+					</a>
+					<div id="yokoso">
+						<p>バインミーシンチャオウェブサイトへようこそ</p>
+						<p>東京都台東区雷門２－１－１３ ２Ｆ<br>TEL：03-XXX-XXX</p>
+					</div>
+					</h1>
+				</div>
+				<input type="button" class="log" value="ログオフ" onclick="return logout()">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="Home.html">ホーム</a></li>
+					<li><a href="Newitem.html">新商品</a></li>
+					<li><a href="Menu.html">メニュー</a></li>
+					<li><a href="Home.html #susume">おすすめ</a></li>
+					<li><a href="Home.html #seki">お席</a></li>
+					<li><a href="Contact.html">アクセス</a></li>
+				</ul>
+			</nav>
+			<ul class="slider">
+				<li><img src="../image/anhquan4.jpg" alt=""></li>
+				<li><img src="../image/anhquan.jpg" alt=""></li>
+				<li><img src="../image/anhquan1.jpg" alt=""></li>
+				<li><img src="../image/anhquan5.jpg" alt=""></li>
+				<li><img src="../image/anhquan6.jpg" alt=""></li>
+				<li><img src="../image/anhquan7.jpg" alt=""></li>
+				<!--/slider-->
+			</ul>
+
+		</header>
+		<main>
+			<div id="tieudehome">
+				<h2>商品選択</h2>
+			</div>
+			<form method="post" action="Completion.html" name="form1">
+				<table border="1" class="kato">
+					<tr>
+						<th style="width: 250px;">商品画像</th>
+						<th style="width: 300px;">商品名</th>
+						<th style="width: 170px;">単価<br>（税込）</th>
+						<th style="width: 170px;">数量</th>
+						<th style="width: 170px;">金額<br>（税込）</th>
+					</tr>
+					<tr class="select1">
+						<td colspan="5"><strong>料理</strong></td>
+					</tr>
+					<tr>
+						<td><img src="../image/heonuongninki.jpg"></td>
+						<td>焼き豚肉バインミー<br>【大人気】</td>
+						<td>&yen;500</td>
+						<td><select name="goods1" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field1" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/micha.jpg"></td>
+						<td>ミチャバインミー</td>
+						<td>&yen;400</td>
+						<td><select name="goods2" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field2" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/ganuong.jpg"></td>
+						<td>焼き鶏肉バインミー</td>
+						<td>&yen;500</td>
+						<td>
+							<select name="goods3" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td><input type="text" class="keisan" name="field3" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/opla.jpg"></td>
+						<td>目玉焼きバインミー</td>
+						<td>&yen;500</td>
+						<td><select name="goods4" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select></td>
+						<td><input type="text" class="keisan" name="field4" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/dacbiet.jpg"></td>
+						<td>スペシャルバインミー<br>【大満足】</td>
+						<td>&yen;700</td>
+						<td><select name="goods5" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select></td>
+						<td><input type="text" class="keisan" name="field5" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/miquang.png"></td>
+						<td>ミークアン【日本初！中部ダナンの名物】</td>
+						<td>&yen;800</td>
+						<td>
+							<select name="goods6" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td><input type="text" class="keisan" name="field6" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/shichu.jpg"></td>
+						<td>ベトナム風<br>ビーフシチュー</td>
+						<td>&yen;800</td>
+						<td><select name="goods7" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field7" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/minuong.jpg"></td>
+						<td>ベトナム風ラー油がけバインミー</td>
+						<td>&yen;300</td>
+						<td><select name="goods8" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field8" size="8" value="0"> 円</td>
+					</tr>
+					<tr class="select1">
+						<td colspan="5"><strong>ドリンク</strong></td>
+					</tr>
+					<tr>
+						<td><img src="../image/cofee1.jpg"></td>
+						<td>ベトナムコーヒー<br>フィン付き</td>
+						<td>&yen;500</td>
+						<td>
+							<select name="goods9" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td><input type="text" class="keisan" name="field9" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/cafedua.jpg"></td>
+						<td>ベトナム風<br>ココナッツコーヒー</td>
+						<td>&yen;600</td>
+						<td><select name="goods10" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field10" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/cafesua.jpg"></td>
+						<td>ベトナムコーヒー<br>（牛乳入り）</td>
+						<td>&yen;500</td>
+						<td><select name="goods11" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select></td>
+						<td><input type="text" class="keisan" name="field11" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/trachanhmatong.jpg"></td>
+						<td>蜂蜜レモンティー</td>
+						<td>&yen;500</td>
+						<td>
+							<select name="goods12" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td><input type="text" class="keisan" name="field12" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/sinhtodau.jpg"></td>
+						<td>いちごスムージー</td>
+						<td>&yen;500</td>
+						<td><select name="goods13" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field13" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/sinhtobo.jpg"></td>
+						<td>アボカドスムージー</td>
+						<td>&yen;500</td>
+						<td><select name="goods14" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field14" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/duamacha.jpg"></td>
+						<td>ココナッツ抹茶ラテ</td>
+						<td>&yen;600</td>
+						<td>
+							<select name="goods15" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td><input type="text" class="keisan" name="field15" size="8" value="0"> 円</td>
+					</tr>
+					<tr class="select1">
+						<td colspan="5"><strong>デザート</strong></td>
+					</tr>
+					<tr>
+						<td><img src="../image/dabao.jpg"></td>
+						<td>台湾風かき氷<br>マンゴー味</td>
+						<td>&yen;500</td>
+						<td><select name="goods16" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select></td>
+						<td><input type="text" class="keisan" name="field16" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/suachuamit.jpg"></td>
+						<td>ジャックフルーツ<br>ヨーグルト</td>
+						<td>&yen;500</td>
+						<td><select name="goods17" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select></td>
+						<td><input type="text" class="keisan" name="field17" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/blan.jpg"></td>
+						<td>ベトナムコーヒー風味<br>プリン</td>
+						<td>&yen;450</td>
+						<td>
+							<select name="goods18" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td><input type="text" class="keisan" name="field18" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/suchuaxoai.jpg"></td>
+						<td>マンゴーヨーグルト</td>
+						<td>&yen;500</td>
+						<td><select name="goods19" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+
+							</select></td>
+						<td><input type="text" class="keisan" name="field19" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/che1.jpg"></td>
+						<td>チェー</td>
+						<td>&yen;500</td>
+						<td><select name="goods20" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select></td>
+						<td><input type="text" class="keisan" name="field20" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/suachuanep.jpg"></td>
+						<td>特製黒米ヨーグルト</td>
+						<td>&yen;500</td>
+						<td>
+							<select name="goods21" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td><input type="text" class="keisan" name="field21" size="8" value="0"> 円</td>
+					</tr>
+					<tr>
+						<td><img src="../image/banhmikem.jpg"></td>
+						<td>アイスバインミー</td>
+						<td>&yen;700</td>
+						<td><select name="goods22" class="keisan1" onChange="keisan()">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select></td>
+						<td><input type="text" class="keisan" name="field22" size="8" value="0"> 円</td>
+					</tr>
+					<tr class="gokei1">
+						<td colspan="4" ><strong>合計</strong></td>
+						<td><input type="text" class="keisan" name="field_total" size="8" value="0"> 円</td>
+					</tr>
+				</table>
+				<input type="submit" value="注文" class="chumon" onclick="return kakunin()">　　　
+			</form>
+			<input type="submit" value="ログオフ" class="chumon1" onclick="return logout()">
+
+
+		</main>
+	</div>
+	<footer>
+		<div id="page_top"><a href="#quaydau"></a></div>
+		<p><b>BANH MI XIN CHAO<BR></b>
+			TEL：03-XXX-XXX<br>
+			東京都台東区雷門２－１－１３ ２Ｆ<br>
+			<small>&copy;Copyright バインミーシンチャオ. All rights reserved.</small>
+		</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../js/anime.js"></script>
+	<script src="../js/menuJS.js"></script>
+	<script src="../js/keisan.js"></script>
+</body>
+
+</html>

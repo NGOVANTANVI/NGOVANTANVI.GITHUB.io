@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.kato img {
+    /*border: 1px black solid;*/
+    height: 100px;
+    width:  120px;
+    margin: 1px 30px;
+}
+
+.kato td, th {
+    text-align: center;
+}
+
+.kato td {
+    font-size: 20px;
+}
+
+.kato th {
+    font-family: "UD デジタル 教科書体 N-B";
+    font-size: 24px;
+    background-color: aqua;
+    color: brown;
+}
+
+.keisan {
+    width: 70px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.keisan1 {
+    font-size: 20px;
+}
+
+.chumon {
+    position: relative;
+    display: inline-block;
+    padding:5px 30px;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*色*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    border: solid 2px #d27d00;/*線色*/
+    margin: 10px 400px;
+    font-size: 24px;
+    font-family: "UD デジタル 教科書体 N-B";
+
+  }
+  
+  .chumon:active {
+    /*押したとき*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+  }
+
+  .chumon1 {
+    position: relative;
+    display: inline-block;
+    padding:5px 30px;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*色*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    border: solid 2px #d27d00;/*線色*/
+    margin: 10px 375px;
+    font-size: 24px;
+    font-family: "UD デジタル 教科書体 N-B";
+
+  }
+  
+  .chumon1:active {
+    /*押したとき*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+  }
+  .select1{
+      background-color:burlywood;
+	
+    height: 50px;
+   
+}
+.select1 td{
+    font-size: 35px;
+	font-family: "HG行書体";
+}
+.gokei1 td{
+    text-align: center;
+    font-size: 30px;
+    background-color:skyblue;
+    font-family: "UD デジタル 教科書体 N-B";
+}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*料理、ドリンク、デザートの部分のスタイル設定*/
+#menu1 nav {
+    width: 700px;
+    margin: 30px auto;
+}
+
+#menu1 nav li {
+    height: 50px;
+}
+
+/*写真、商品、値段の部分のスタイル設定*/
+.menu-item1 {
+    display: flex;
+    margin: auto auto;
+    /*border: black 1px solid;*/
+}
+
+/*phan 3 hinh anh*/
+.menu-photoko img {
+    height: 200px;
+    width: 200px;
+}
+
+.menu-photoko {
+    margin: auto 70px 30px 70px;
+}
+
+.menu-photoko p {
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.menu-photoko h3 {
+    margin: auto;
+    text-align: center;
+}
+/*phan 4 hinh anh*/
+.menu-photo1 img {
+    height: 200px;
+    width: 200px;
+}
+
+.menu-photo1 {
+    margin-right: 69px;
+    /*border: black 1px solid;*/
+    margin-bottom: 30px;
+}
+
+.menu-photo1 h3 {
+    margin: auto;
+    text-align: center;
+}
+
+.menu-photo1 p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#menu2 {
+    border-bottom: palevioletred 2px solid;
+}
+
+.spinner_area {
+    text-align: center;
+}
+
+.spinner_area input[type="number"] {
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+#akusesu {
+    border-bottom: palevioletred 2px solid;
+}
+
+.menu-text p {
+    font-size: 20px;
+    font-family: "HGP教科書体";
+    line-height: 2;
+}
