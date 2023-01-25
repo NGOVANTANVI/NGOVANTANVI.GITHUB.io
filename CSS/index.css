@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*body スタイル設定*/
+
+body {
+	background-color: #f1efeb;
+	margin: auto;
+	padding: 0px;
+	font-family: "游明朝";
+	color: black;
+	width: 1200px;
+	/*border: black 1px solid;*/
+}
+
+/*wrap スタイル設定*/
+
+.wrap {
+	width: 80%;
+	margin: auto;
+}
+
+/*logo スタイル設定*/
+
+.logo {
+	width: 10%;
+}
+
+.logo img {
+	width: 200%;
+	height: 200%;
+}
+
+/*ナビゲーションのリンク*/
+
+/* ナビゲーションのリンク（未訪問）のスタイル設定 */
+
+nav a:link {
+	color: black;
+}
+
+/* ナビゲーションのリンク（訪問済み）のスタイル設定 */
+
+nav a:visited {
+	color: #3c454d;
+}
+
+/* ナビゲーションのリンク（カーソルなどを重ねた）のスタイル設定 */
+
+nav a:hover {
+	color: black;
+	background-color: cyan;
+	transition: 0.6s;
+}
+
+/*nav の a のスタイル設定*/
+
+nav a {
+	/*border: black 1px dotted;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 101%;
+	text-align: center;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+}
+
+/*nav の li のスタイル設定*/
+
+nav li {
+	/*border: red 1px solid;*/
+	width: 100%;
+	height: 50px;
+}
+
+/*.slider1{
+	height: 10vh;
+}*/
+
+/*nav スタイル設定*/
+
+nav {
+	/*border: black 1px solid;*/
+	margin-top: 40px;
+	font-size: 25px;
+	width: 100%;
+	font-family: "HG行書体";
+}
+
+/*ulのスタイル設定*/
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	display: flex;
+	border-left: black 1px solid;
+	/*height: 10vh;*/
+}
+
+/*liのスタイル設定*/
+
+li {
+	border-right: black 1px solid;
+}
+
+/*a {
+	display: block;
+	text-decoration: none;
+}*/
+
+/*ログインボタンのスタイル設定*/
+
+.log {
+	display: block;
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background-color: aquamarine;
+	border: 2px solid #EC407A;
+	transition: .6s;
+	font-size: 24px;
+	margin: 50px 10px 20px auto;
+	float: right;
+	height: 50px;
+	font-family: "HG行書体";
+	border-radius: 20px;
+}
+
+.log:hover {
+	background: #EC407A;
+	color: yellow;
+}
+
+/*店名のスタイル設定*/
+
+#name {
+	float: right;
+	margin-left: 150px;
+	margin-right: auto;
+	margin-top: 10px;
+	font-size: 26px;
+}
+
+#name a {
+	text-decoration: none;
+	color: black;
+}
+
+/*LOGOのスタイル設定*/
+
+#test {
+	height: 270px;
+	display: flex;
+	background-image: url(../image/pnbackground3.jpg);
+	font-family: "HG行書体";
+	border-radius: 20px;
+	
+}
+
+/*ようこそ部分のスタイル設定*/
+
+#yokoso {
+	font-size: 20px;
+	text-align: right;
+	color: red;
+}
+
+/*tieude（おすすめ、席。。。）のスタイル設定*/
+
+#tieudehome {
+	text-align: center;
+	font-family: "HG行書体";
+	font-size: 24px;
+	color: chocolate;
+	margin-bottom: 10px;
+}
+
+/*フッター部分のスタイル設定*/
+
+footer {
+	margin-left: 20px;
+}
+
+/*ログイン必要リンク*/
+
+#shouhin a {
+	text-decoration: none;
+	color: red;
+	font-size: 30px;
+}
+
+/*spanのスタイル設定*/
+
+span {
+	color: red;
+}
+
+/*おすすめ部分（写真、商品名、商品説明）のスタイル設定*/
+
+.menu-item {
+	border-bottom: black 2px dotted;
+	padding: 20px 8px;
+	margin: 30px auto;
+	display: flex;
+}
+
+/*おすすめ部分（商品説明）のスタイル設定*/
+
+.menu-text {
+	/* border: black 1px solid;*/
+	margin: 30px auto;
+}
+
+/*おすすめ部分（写真）のスタイル設定*/
+
+.menu-photo img {
+	height: 300px;
+	width: 320px;
+	margin-right: 16px;
+}
+
+/*席の部分（写真、名）のスタイル設定*/
+
+.menu-item2 {
+	display: flex;
+	/*border: black 1px solid;*/
+}
+
+/*席の部分（写真）のスタイル設定*/
+
+.menu-photo2 img {
+	height: 300px;
+	width: 300px;
+	margin: auto 8px;
+}
+
+/*席の部分（写真）のスタイル設定*/
+
+.menu-photo2 {
+	margin: auto 10px;
+}
+
+/*席の部分（写真）のスタイル設定*/
+
+.menu-photo2 h3 {
+	margin-top: 5px;
+	text-align: center;
+}
+
+/*#loginput a {
+	text-decoration: none;
+	font-size: 30px;
+}*/

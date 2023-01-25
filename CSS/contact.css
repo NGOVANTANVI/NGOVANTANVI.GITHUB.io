@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*地図の写真のスタイル設定*/
+#contact img {
+	height: 500px;
+	width: 1000px;
+}
+
+/* クラス(info)ののスタイル設定 */
+.info {
+	border-collapse: collapse;
+	margin: auto 150px;
+	width: 700px;
+}
+
+/* クラス(info)のテーブルの見出しとデータのスタイル設定 */
+
+.info th, .info td {
+	border: 1px solid #bec2c7;
+	text-align: left;	
+	padding: 8px;
+}
+
+/* クラス(info)のテーブルの見出しのスタイル設定 */
+.info th {
+	color: #3f5170;
+	background-color: #dde2ea;
+	width: 100px;
+	vertical-align: top;
+}
